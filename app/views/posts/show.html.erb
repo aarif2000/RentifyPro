@@ -12,11 +12,3 @@
     </li>
   <% end %>
 </ul>
-
-<h3>Add a Comment</h3>
-<%= form_with(model: [@post, @comment]) do |f| %>
-  <div>
-    <%= f.text_area :content %><br>
-    <%= f.submit 'Post Comment' %>
-  </div>
-<% end %>
